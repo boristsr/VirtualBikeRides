@@ -1,0 +1,4 @@
+numpy==1.26.4
+opencv-python==4.9.0.80
+pygame==2.5.2
+tk==0.1.0

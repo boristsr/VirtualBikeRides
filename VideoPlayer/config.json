@@ -1,0 +1,10 @@
+{
+    "video_dir" : "./videos",
+    "listen_ip" : "0.0.0.0",
+    "listen_port" : 20203,
+    "target_playback_speed_decay" : 0.25,
+    "current_playback_speed_adjust" : 0.75,
+    "min_playback_speed" : 0.001,
+    "max_playback_speed" : 2.0,
+    "packet_reset_time" : 5.0
+}
