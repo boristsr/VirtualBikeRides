@@ -1,6 +1,6 @@
 # Virtual Bike Rides
 
-This is a project add a videoplayer to a mini exercise bike. You can read more about the project on the project page here: [INSERT URL]()
+This is a project add a videoplayer to a mini exercise bike. You can read more about the project on the project page here: [Build Instructions](https://www.gdcorner.com/blog/2024/05/24/VirtualBike.html)
 
 This repository contains 3 main components:
 
