@@ -90,6 +90,14 @@ unsigned long last_broadcast_time = millis();
 unsigned long debounce_time = 300;
 unsigned long broadcast_heartbeat_time = 1000;
 
+void set_backlight_brightness(byte brightness)
+{
+    pinMode(TFT_BL, OUTPUT);
+    ledcSetup(0, 1000, 8); // 0-15, 5000, 8
+    ledcAttachPin(TFT_BL, 0); // TFT_BL, 0 - 15
+    ledcWrite(0, brightness); // 0-15, 0-255 (with 8 bit resolution); 0=totally dark;255=totally shiny
+}
+
 void hal_setup(void)
 {
     Serial.begin(9600);
@@ -108,6 +116,8 @@ void hal_setup(void)
     setup_lvgl_tft_screen();
     //tick lvgl once to get the screen to show up
     lv_task_handler();
+
+    set_backlight_brightness(30);
 }
 
 void broadcast_update()
