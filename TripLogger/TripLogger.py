@@ -62,6 +62,7 @@ class VirtualBike:
         self.trip = Trip()
         self.running = True
 
+        self.last_packet_received_time = 0.0
         self.last_processed_time = time.time()
         self.last_cycle_count_rcvd = 0
         self.last_cycle_count_processed = 0
